@@ -4,29 +4,208 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title>POP Farma Itapuã</title>
   </head>
   <body>
     <header>
-      <nav>
-        <img
-        src="assets/logo/png/POP-SEM-FUNDO.png"
-        alt="logo em forma de coração, nas cores azul e vermelho"
-        
-        />
-        <ul>
-          <li>Quem somos</li>
-          <li>Onde estamos</li>
-          <li>Fale conosco</li>
-        </ul>
+      <nav class="header-content container">
+        <div class="header-icon" data-aos="flip-up" data-aos-duration="1500">
+          <a href="https://www.instagram.com/popfarmaitapua/"
+          target="_blank">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+          </a>
+        </div>
+        <div class="header-logo">
+          <img src="assets/logo/png/POP-SEM-FUNDO.png" alt="" />
+        </div>
+
+        <input type="checkbox" class="toggle-menu" />
+        <div class="menu-hamburguer"></div>
       </nav>
+      <aside class="container">
+        <div class="opening-hours">
+          <div class="opening-photo">
+            <img src="assets/logo/png/POP-4-sem-fundo.png" alt="" />
+          </div>
+          <div class="opening-text">
+            <h1>POP FARMA</h1>
+            <h4>A nova farmácia de Itapuã</h4>
+            <p>Horário de funcionamento: 07h às 23h</p>
+          </div>
+        </div>
+      </aside>
     </header>
+    <main class="container">
+      <h2>Serviços</h2>
+      <div class="services" data-aos="fade-up"  data-aos-duration="1500" >
+        <div class="services-list-one">
+          <ul>
+            <li>Aplicação de injetável</li>
+            <li>Perfuração de lóbulo auricular</li>
+            <li>Aferição de pressão</li>
+            <li>Glicemia capilar</li>
+          </ul>
+        </div>
+        <div class="services-list-two">
+          <ul>
+            <li>Acupuntura auricular</li>
+            <li>Consulta e Prescrição Farmacêutica</li>
+            <li>Fitoterapia Brasileira</li>
+            <li>Fitoterapia Chinesa</li>
+          </ul>
+        </div>
+      </div>
+      <div class="checkup">
+        <h2>Faça o check-up da sua saúde na Pop Farma</h2>
+      </div>
+
+      <div class="whoami" data-aos="fade-up"  data-aos-duration="1500" >
+        <h1>Quem somos</h1>
+        <p>
+          A farmácia "Pop Farma da Ilha" nasceu de um sonho de um grupo de
+          sócios. Com garra e determinação de fazer um ótimo empreendimento,
+          trouxeram uma solução para a falta de um estabelecimento de saúde que
+          zela pelo cuidado e bem-estar da popilação. Nosso trabalho consiste em
+          oferecer serviços e atendimentos de qualidade para construir
+          relacionamentos duradouros entre nossa equipe e a comunidade, sempre
+          tratando cada cliente como único.
+        </p>
+        <!-- <h3>Missão</h3> -->
+        <p>
+          Nossa missão é oferecer atendimento diferenciado e personalizado, com
+          credibilidade e confiança. Servir com alegria, ética e respeito,
+          buscando sempre superar expectativas a um preço acessível em todas as
+          situações.
+        </p>
+        <!-- <h3>Visão</h3> -->
+        <p>
+          Oferecer mix de produtos atualizados e preços competitivos, tendo
+          atendimento diferenciado e alta qualidade de serviços. Gerando
+          sustentabilidade econômica.
+        </p>
+        <!-- <h3>Valores</h3> -->
+        <p>
+          Nossos valores são atuação transparente, honesto, eficiente e seguro.
+          Além de comprometimento com ética, respeito à fornecedores, clientes e
+          colaboradorese, primordial, produtos de confiança.
+        </p>
+      </div>
+      <div class="location" data-aos="fade-up"  data-aos-duration="1500" >
+        <h1>Localização</h1>
+        <div class="location-content">
+          <div class="location-text"  >
+            <p>
+              Estamos localizados na Rua Jorge Bonifácio dos Santos, número 6.
+              Na altura do Shopping Estrada do Coco, ao lado do Restaurante Casa
+              de Palha (Sentido Salvador).
+            </p>
+            <a href="https://api.whatsapp.com/send?phone=5571992980198&text=Quero%20fazer%20um%20atendimento!">
+              <button>
+                Entre em contato conosco
+                <i class="fa-brands fa-whatsapp fa-2x"></i>
+              </button>
+            </a>
+          </div>
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.5111470683332!2d-38.31011592560729!3d-12.874819957869306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163e1ac901c999%3A0x5f3643b9c82bf9fd!2sR.%20Jorge%20Bonif%C3%A1cio%20dos%20Santos%2C%206%20-%20Santo%20Antonio%2C%20Lauro%20de%20Freitas%20-%20BA%2C%2042700-000!5e0!3m2!1spt-BR!2sbr!4v1693352907268!5m2!1spt-BR!2sbr"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container">
+      <div class="sac">
+        <h2>Atendimento</h2>
+        <p>(71) 98765-4321</p>
+        <p>
+          (71) 98765-4321
+          <i class="fa-brands fa-whatsapp fa-1x" style="color: #002868"></i>
+        </p>
+      </div>
+      <div class="payment">
+        <h2>Formas de Pagamento</h2>
+        <div class="payment-picture">
+          <img
+            max-width="40px"
+            src="assets/payment/mastercard.svg"
+            alt="forma de pagamento:mastercard"
+          />
+          <img
+            max-width="40px"
+            src="assets/payment/visa.svg"
+            alt="forma de pagamento:visa"
+          />
+          <img
+            max-width="40px"
+            src="assets/payment/diners.svg"
+            alt="forma de pagamento:elo diners"
+          />
+          <img
+            max-width="40px"
+            src="assets/payment/elo.svg"
+            alt="forma de pagamento:elo"
+          />
+        </div>
+      </div>
+      <div class="footer-pop-farma">
+        <img
+          src="assets/logo/png/POP-3-sem-fundo.png"
+          alt="Logo da farmácia Pop Farma"
+        />
+      </div>
+    </footer>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=5571992980198&text=Quero%20fazer%20um%20atendimento!"
+      class="whatsapp-button"
+      target="_blank"
+    >
+      <img
+        src="assets/logo/png/whatsapp-icon.png"
+        alt="botão de contato do whatsapp"
+      />
+      <span class="tooltip-text">Fale conosco!</span>
+    </a>
+    <script src="script.js"></script>
   </body>
 </html>
