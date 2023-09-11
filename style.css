@@ -47,7 +47,7 @@ a {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -58,6 +58,7 @@ header {
     var(--primary-color),
     var(--text-header-color)
   );
+  z-index: 1;
 }
 .header-content {
   display: flex;
@@ -81,8 +82,8 @@ nav {
   gap: 10px;
 }
 
-.header-logo {
-  width: 10%;
+.header-logo img {
+  max-width: 120px;
 }
 
 .menu-hamburguer {
@@ -151,6 +152,8 @@ header aside .opening-hours {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+
+  margin-bottom: 50px;
 }
 
 header aside .opening-hours div {
@@ -187,12 +190,15 @@ header aside .opening-hours .opening-text p {
   font-size: 10px;
   font-weight: 700;
 }
+
 main {
   background-color: var(--text-header-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+
+  margin-top: 20px;
 }
 
 main h2 {
@@ -226,7 +232,7 @@ main .services .services-list-two ul {
 
 main .services .services-list-one ul li,
 main .services .services-list-two ul li {
-  padding: 10px 80px;
+  padding: 10px 70px;
   margin: 5px 10px;
 
   background-color: var(--primary-color);
@@ -262,6 +268,7 @@ main .checkup h2 {
   background-color: var(--primary-color);
   color: var(--text-header-color);
 }
+
 main .whoami {
   display: flex;
   flex-direction: column;
@@ -274,7 +281,6 @@ main .whoami {
 
   background: linear-gradient(
     50deg,
-    var(--text-header-color),
     #3c7aec,
     var(--primary-color),
     var(--blue-strong)
@@ -306,6 +312,7 @@ main .location {
   font-family: var(--font-style-two);
 }
 main .location h1 {
+  margin-top: 5px;
   color: var(--primary-color);
 }
 
@@ -314,13 +321,16 @@ main .location-content {
   align-items: center;
   justify-content: space-between;
 
-  padding: 40px;
+  padding: 20px;
 
   text-align: justify;
   font-weight: 500;
   font-size: 20px;
 }
-
+main .location-content .location-map iframe {
+  box-shadow: 4px 6px 6px rgba(0, 40, 104, 0.32);
+  border-radius: 4px;
+}
 main .location-content .location-text {
   padding-inline: 30px;
 }
@@ -434,4 +444,109 @@ footer .footer-pop-farma {
 .whatsapp-button:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content {
+    width: 100%;
+  }
+
+  .header-content i {
+    font-size: 20px;
+    gap: 10px;
+  }
+
+  .header-icon {
+    margin-left: 60px;
+  }
+
+  .header-logo img {
+    max-width: 120px;
+    margin: 0;
+    padding: 0;
+  }
+
+  header aside .opening-hours .opening-text h1 {
+    font-size: 30px;
+  }
+
+  header aside .opening-hours .opening-text h4 {
+    font-size: 10px;
+  }
+  header aside .opening-hours .opening-text p {
+    font-size: 8px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main .services {
+    display: block;
+  }
+
+  main .services .services-list-one ul li,
+  main .services .services-list-two ul li {
+    font-size: 12px;
+    margin: 3px 10px;
+    width: 90vw;
+  }
+
+  main .checkup h2 {
+    width: 100vw;
+  }
+
+  main .whoami h1 {
+    font-size: 24px;
+  }
+  main .whoami p {
+    font-size: 15px;
+  }
+
+  main .location-content {
+    flex-direction: column;
+    gap: 10px;
+    width: 100vw;
+  }
+
+  main .location-content .location-map iframe {
+    width: 100vw;
+  }
+
+  main .location-content .location-text {
+    width: 100vw;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+
+  footer .sac p {
+    font-size: 10px;
+  }
+
+  footer .payment img {
+    width: 50px;
+  }
+
+  .whatsapp-button {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  footer h2 {
+    font-size: 15px;
+  }
+
+  footer .payment img {
+    width: 30px;
+  }
+
+  footer .footer-pop-farma {
+    width: 35px;
+  }
+  .whatsapp-button img {
+    width: 40px;
+  }
 }
